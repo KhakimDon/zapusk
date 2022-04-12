@@ -1,0 +1,231 @@
+@import url('../fonts/gilroy/stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+$gilroy: 'Oswald', sans-serif
+$mon: 'Montserrat', sans-serif
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    color: black
+    text-decoration: none
+    list-style-type: none
+
+main
+    max-width: 1920px
+    margin: auto
+    background-color: #171717
+.onescreen
+    position: relative
+    max-height: 1500px
+    height: 130vh
+    background-repeat: no-repeat
+    background-image: url('../images/background.png')
+    .photos
+        max-width: 1033.68px    
+        position: absolute
+        bottom: 50px
+        right: 70px
+        img
+            width: 100%
+        div
+            display: flex
+            justify-content: space-evenly
+            span
+                font-weight: 400
+                font-size: 64px
+                color: #E9CF98
+                font-family: 'Beau Rivage', cursive
+    .content
+        margin: auto
+        width: 75%
+        display: flex
+        flex-direction: column
+        height: 100%
+        align-items: start
+        justify-content: center
+        h1
+            font-family: $gilroy
+            color: #FFFFFF
+            font-weight: 900
+            font-size: 69px
+            width: 734px
+        span
+            font-weight: 500
+            font-size: 26px
+            color: white
+            font-family: $gilroy
+            margin: 20px 0px 20px 0px
+        p
+            font-family: 'Montserrat', sans-serif
+            font-weight: 400
+            font-size: 18px
+            color: white
+            line-height: 156%
+            max-width: 370px
+            margin-bottom: 30px
+        a
+            position: relative
+            cursor: pointer
+            span
+                width: 100%
+                left: 0%
+                top: 10%
+                font-size: 20px
+                color: white
+                font-family: 'Montserrat', sans-serif
+                text-align: center
+                position: absolute
+            
+header
+    position: absolute
+    width: 100%
+    z-index: 999
+    max-width: 1920px
+    left: 50%
+    top: 0
+    transform: translateX(-50%)
+    // background: red  
+    height: 320px
+    .wrapper
+        height: 150px
+        margin: auto
+        width: 75%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .info
+            display: flex
+            div
+                display: flex
+                flex-direction: column
+                text-align: center
+                margin: 0px 25px
+                span
+                    font-family: 'Gilroy'
+                    color: #FFFFFF
+                    font-weight: 600
+                    text-transform: uppercase
+                    &:nth-child(2)
+                        margin-top: 2px
+                        font-size: 36px
+        .date
+            padding-top: 46px
+            align-self: start
+            display: flex
+            flex-direction: column 
+            text-align: center
+            span
+                font-size: 16px
+                text-transform: uppercase
+                font-weight: 600
+                font-family: 'Gilroy'
+                color: #FFFFFF
+            .month
+                font-size: 40px
+                margin-top: -25px
+                text-transform: uppercase
+                font-weight: 600
+            b
+                line-height: 250px
+                font-size: 250px
+                font-family: 'Poppins', sans-serif
+                font-weight: 400
+                position: relative
+                color: transparent
+                -webkit-text-stroke-width: 4px
+                -webkit-text-stroke-color: white
+
+
+.secondscreen
+    background-image: url('..//images/background2.png')
+    background-size: cover
+    background-repeat: no-repeat
+    padding-bottom: 100px
+    .wrapper
+        margin: auto
+        // background: blue
+        padding-top: 100px
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 75%
+        h2
+            font-weight: 900
+            color: #FFFFFF
+            text-align: center
+            font-size: 52px
+            max-width: 720px
+            font-family: $gilroy
+        .line
+            width: 100%
+            height: 2px
+            max-width: 680px
+            margin-top: 10px
+        a
+            position: relative
+            span
+                position: absolute
+                left: 50%
+                top: 45%
+                width: max-content
+                font-weight: 500
+                font-size: 20px
+                color: white
+                font-family: $mon
+                transform: translate(-50%,-50%)
+        .items
+            height: 750px   
+            width: 100%
+            margin: 100px 0px 100px 0px 
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            align-content: space-between
+            justify-content: space-between
+            .block
+                padding: 20px 20px 20px 10px
+                width: 507.73px
+                height: 155.44px
+                border-radius: 5px
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center center
+                background-image: url('..//images/backgroundgray.png')
+                display: flex
+                justify-content: space-between
+                align-items: start
+                span
+                    display: inline-block
+                    padding-top: 10px
+                    font-weight: 400
+                    font-size: 18px
+                    font-family: $gilroy
+                    color: white
+                p
+                    font-family: $mon
+                    font-weight: 400
+                    color: #C4C4C4
+                    font-size: 15px
+                .img-wrapper
+                    height: 80px
+                    min-width: 100px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    text-align: center
+                    position: relative
+                    span
+                        display: inline
+                        padding: 0px
+                        font-weight: 600
+                        font-size: 32px
+                        z-index: 2
+                        height: max-content
+                    img
+                        z-index: 1
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                        position: absolute
